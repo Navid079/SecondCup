@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Merriweather&family=Roboto:wght@100&display=swap");
+
+/* 
+=================
+Global Variables
+=================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*Primary Colors*/
+  --clr-primary-1: #f8a296;
+  --clr-primary-2: #dc7f73;
+  --clr-primary-3: #c05e52;
+  --clr-primary-4: #8a3024;
+  --clr-primary-5: #772014;
+  --clr-primary-6: #66190f;
+  --clr-primary-7: #5c140b;
+  --clr-primary-8: #490f07;
+  --clr-primary-9: #380a04;
+  --clr-primary-10: #220400;
+
+  /* Secondary Colors */
+  --clr-secondary-5: #42fc99;
+
+  /* Transitions */
+  --trn-slow: all 1s linear;
+  --trn-mid: all 500ms linear;
+  --trn-fast: all 150ms linear;
+
+  /* Font Families */
+  --fnt-display: "Lobster Two";
+  --fnt-serif: "Merriwheather";
+  --fnt-sans: "Roboto";
+}
+
+/* 
+=================
+Global Styles
+=================
+*/
+
+p {
+  font-family: var(--fnt-sans);
+}
+
+.my-btn {
+  outline: 4px solid var(--clr-primary-8);
+  width: auto;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0;
+  color: var(--clr-primary-9);
+  background: var(--clr-primary-1);
+  transition: var(--trn-mid);
+}
+
+.my-btn:hover {
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+}
+
+@media screen and (min-width: 768px) {
+  .my-btn,
+  .my-btn:hover {
+    background: transparent;
+    color: #fff;
+    border-radius: 0;
+  }
+  .my-btn:hover {
+    outline: 10px solid var(--clr-primary-5);
+  }
+}
+/* 
+=================
+Hero
+=================
+*/
+
+.hero {
+  background: var(--clr-primary-3);
+  min-height: 100vh;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 30%;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: var(--fnt-display);
+  color: var(--clr-primary-8);
+}
+
+.subtitle-container {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-weight: 1000;
+  color: var(--clr-primary-5);
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        rgba(248, 162, 150, 0.2),
+        rgba(192, 94, 82, 0.6)
+      ),
+      url("../img/bg.jpg") center/cover no-repeat;
+  }
+
+  .title-container {
+    margin-top: 20vh;
+  }
+
+  .title {
+    font-size: 9rem;
+    color: var(--clr-secondary-5);
+    text-shadow: 3px 3px 0 var(--clr-primary-8), -1px -1px 0 #000,
+      1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .subtitle {
+    color: var(--clr-secondary-5);
+    font-size: 3rem;
+    text-shadow: 3px 3px 0 var(--clr-primary-7),
+      -1px -1px 0 var(--clr-primary-10), 1px -1px 0 var(--clr-primary-10),
+      -1px 1px 0 var(--clr-primary-10), 1px 1px 0 var(--clr-primary-10);
+  }
+}
