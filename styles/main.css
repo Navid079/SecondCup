@@ -24,7 +24,16 @@ Global Variables
   --clr-primary-10: #220400;
 
   /* Secondary Colors */
-  --clr-secondary-5: #42fc99;
+  --clr-secondary-1: #d8eeff;
+  --clr-secondary-2: #c8dff0;
+  --clr-secondary-3: #bdd1df;
+  --clr-secondary-4: #afc5d4;
+  --clr-secondary-5: #a0b7c7;
+  --clr-secondary-6: #89a1b3;
+  --clr-secondary-7: #728ca0;
+  --clr-secondary-8: #5f7c92;
+  --clr-secondary-9: #486880;
+  --clr-secondary-10: #334f64;
 
   /* Transitions */
   --trn-slow: all 1s linear;
@@ -66,14 +75,16 @@ p {
 @media screen and (min-width: 768px) {
   .my-btn,
   .my-btn:hover {
+    outline-color: var(--clr-secondary-5);
     background: transparent;
     color: #fff;
     border-radius: 0;
   }
   .my-btn:hover {
-    outline: 10px solid var(--clr-primary-5);
+    outline: 10px solid var(--clr-secondary-6);
   }
 }
+
 /* 
 =================
 Hero
@@ -110,11 +121,7 @@ Hero
 
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(
-        rgba(248, 162, 150, 0.2),
-        rgba(192, 94, 82, 0.6)
-      ),
-      url("../img/bg.jpg") center/cover no-repeat;
+    background: url("../img/bg.jpg") center/cover no-repeat;
   }
 
   .title-container {
