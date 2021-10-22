@@ -23,7 +23,7 @@
         <div class="col-sm-10 subtitle-container">
           <p class="subtitle">Experience the best tastes</p>
         </div>
-        <a href="#" class="btn my-btn">Order Now!</a>
+        <a href="#order" class="btn my-btn">Order Now!</a>
       </div>
     </div>
     <!-- End of Hero -->
@@ -43,7 +43,7 @@
                 Voluptas, impedit eligendi? Accusantium a magni unde! Maiores
                 nemo facere dolor sint!
               </p>
-              <a href="#" class="btn feature-btn">Read More</a>
+              <a href="#quality" class="btn feature-btn">Read More</a>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
                 minima commodi non fugit dolores odio sit inventore quisquam
                 tenetur molestiae.
               </p>
-              <a href="#" class="btn feature-btn">Read More</a>
+              <a href="#friendly" class="btn feature-btn">Read More</a>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
                 Voluptates, nobis voluptatem nemo tenetur assumenda vitae
                 sapiente. Ipsa natus at saepe!
               </p>
-              <a href="#" class="btn feature-btn">Read More</a>
+              <a href="#profitable" class="btn feature-btn">Read More</a>
             </div>
           </div>
         </div>
@@ -127,26 +127,143 @@
     <!-- End of Gallery -->
 
     <!-- Quality Section -->
-    <section class="container-fluid quality">
+    <section class="container-fluid section" id="quality">
       <div class="row">
-        <div class="col-md-6 quality-img-col">
-          <div class="quality-img-container">
+        <div class="col-md-6">
+          <div class="section-img-container">
             <img
               src="img/gallery-05.jpg"
               alt="High Quality"
-              class="quality-img"
+              class="section-img"
             />
           </div>
         </div>
-        <div class="col-md-6 quality-body">
-          <h1 class="section-title quality-title">High <span class="title-spec">Quality</span></h1>
-          <p class="section-body quality-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deleniti suscipit facere ex rerum aspernatur quasi omnis beatae incidunt velit obcaecati libero nam voluptatum tempora laboriosam dolorem, adipisci alias soluta!
+        <div class="col-md-6 section-body">
+          <h1 class="section-title">
+            High <span class="title-spec">Quality</span>
+          </h1>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            deleniti suscipit facere ex rerum aspernatur quasi omnis beatae
+            incidunt velit obcaecati libero nam voluptatum tempora laboriosam
+            dolorem, adipisci alias soluta!
           </p>
         </div>
       </div>
     </section>
     <!-- End of Quality Section -->
+
+    <!-- Friendly Section -->
+    <section class="container-fluid section-e" id="friendly">
+      <div class="row">
+        <div class="col-md-6 order-md-last">
+          <div class="section-img-container">
+            <img
+              src="img/gallery-01.jpg"
+              alt="High Quality"
+              class="section-img"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 section-body">
+          <h1 class="section-title">
+            Friend<span class="title-spec">ly</span>
+          </h1>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            deleniti suscipit facere ex rerum aspernatur quasi omnis beatae
+            incidunt velit obcaecati libero nam voluptatum tempora laboriosam
+            dolorem, adipisci alias soluta!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Friendly Section -->
+
+    <!-- Profitable Section -->
+    <section class="container-fluid section" id="profitable">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-img-container">
+            <img
+              src="img/gallery-04.jpg"
+              alt="High Quality"
+              class="section-img"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 section-body">
+          <h1 class="section-title">
+            Profit<span class="title-spec">able</span>
+          </h1>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            deleniti suscipit facere ex rerum aspernatur quasi omnis beatae
+            incidunt velit obcaecati libero nam voluptatum tempora laboriosam
+            dolorem, adipisci alias soluta!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Profitable Section -->
+
+    <!-- Order -->
+    <section class="container-fluid order" id="order">
+      <form class="row">
+        <div class="col-lg-4 order-step p-5">
+          <h1 class="order-title">Step 1</h1>
+          <h3 class="order-subtitle mb-4">Pick a date</h3>
+          <input
+            type="datetime-local"
+            name="date"
+            id="date"
+            class="form-control form-control-lg"
+          />
+        </div>
+        <div class="col-lg-4 order-step p-5">
+          <h1 class="order-title">Step 2</h1>
+          <h3 class="order-subtitle mb-4">Pick a table</h3>
+          <select name="table" id="table" class="form-select form-select-lg">
+            <option selected>-- Pick a table --</option>
+            <option value="1">Table #1</option>
+            <option value="2">Table #2</option>
+            <option value="3">Table #3</option>
+            <option value="4">Table #4</option>
+            <option value="5">Table #5</option>
+          </select>
+        </div>
+        <div class="col-lg-4 order-step p-5">
+          <h1 class="order-title">Step 3</h1>
+          <h3 class="order-subtitle mb-4">Enter your Info</h3>
+          <div class="form-floating">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control form control-lg mb-3"
+              placeholder="Name"
+            />
+            <label for="name">Name</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control form-control-lg mb-3"
+              placeholder="email@email.com"
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <textarea style="height: 200px; resize: none;" class="form-control mb-3" name="comment"></textarea>
+            <label for="comment">Comment</label>
+          </div>
+          <button type="submit" class="btn form-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- End of Order -->
 
     <!-- Bootstrap Javascripts -->
     <script src="styles/bootstrap/js/bootstrap.js"></script>
