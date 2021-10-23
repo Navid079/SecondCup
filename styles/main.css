@@ -93,6 +93,61 @@ p {
 
 /* 
 =================
+Navbar
+=================
+*/
+
+.my-nav {
+  background: var(--clr-secondary-10);
+}
+
+.brand,
+.toggler-icon {
+  color: var(--clr-primary-2);
+  font-size: 2rem;
+  font-family: var(--fnt-display);
+  transition: var(--trn-mid);
+}
+
+.brand:hover {
+  color: var(--clr-primary-5);
+}
+
+.toggler-icon:hover {
+  color: var(--clr-primary-3);
+}
+
+.toggler:focus .toggler-icon {
+  color: var(--clr-primary-5);
+}
+
+.nav-link {
+  color: var(--clr-secondary-2);
+  font-size: 1.75rem;
+  font-family: var(--fnt-sans);
+  transition: var(--trn-fast);
+}
+
+.nav-item {
+  border-bottom: 1px solid var(--clr-secondary-1);
+}
+
+.nav-link:hover { 
+  color: var(--clr-secondary-5);
+  transform: translateX(20px);
+}
+
+@media screen and (min-width:992px) {
+  .nav-item {
+    border: none;
+  }
+  
+  .nav-link:hover {
+    transform: none;
+  }
+}
+/* 
+=================
 Hero
 =================
 */
@@ -339,8 +394,11 @@ Quality Section
     align-items: center;
   }
 }
-
-/* Order */
+/* 
+=================
+Order
+=================
+*/
 
 .order {
   background: #000;
@@ -399,4 +457,33 @@ Quality Section
   .order-step {
     border-right: 1px solid #fff;
   }
+}
+
+/* 
+=================
+Footer
+=================
+*/
+
+.footer {
+  background: var(--clr-primary-9);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.social {
+  font-size: 3rem;
+  color: var(--clr-secondary-2);
+  letter-spacing: 0.275rem;
+  transition: var(--trn-fast);
+  text-decoration: none;
+}
+
+.social:hover{
+  color: var(--clr-primary-1);
+}
+
+.copy-text {
+  color: var(--clr-secondary-2);
+  font-weight: 700;
 }
